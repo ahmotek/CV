@@ -1,5 +1,7 @@
 //- This file contains application fonts variables
 
-//- Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'SourceSansPro-Regular', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+$text-normal: 400;
+$text-semibold: 600;

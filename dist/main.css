@@ -27,12 +27,29 @@ a:hover, a:active, a:focus {
   text-decoration: underline;
 }
 
+@font-face {
+  font-family: SourceSansPro;
+  font-weight: 400;
+  src: url("../assets/fonts/SourceSansPro-Regular.ttf");
+}
+@font-face {
+  font-family: SourceSansPro;
+  font-weight: 600;
+  src: url("../assets/fonts/SourceSansPro-SemiBold.ttf");
+}
 /**
  * Basic typography style for copy text
  */
 body {
   color: #41474b;
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font: 400 125%/1.4 "SourceSansPro-Regular", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+a:not([class]) {
+  font-weight: 400;
+}
+a.styled {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=main.css.map */
