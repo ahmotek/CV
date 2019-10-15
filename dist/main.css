@@ -1,55 +1,18 @@
-/**
- * Set up box model for the root element
- */
-html {
-  box-sizing: border-box;
-}
+/* Error: expected "{".
+ *    ,
+ * 31 | >>>>>>> 3d409f12fb50572f7d308fdaced6c1b92c380177
+ *    |                                                 ^
+ *    '
+ *   src/sass/base/_typography.scss 31:49  @import
+ *   src/sass/main.scss 16:9               root stylesheet */
 
-/**
- * Inherit root box-sizing value to all DOM elements
- * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 31 \2502  >>>>>>> 3d409f12fb50572f7d308fdaced6c1b92c380177\a    \2502                                                  ^\a    \2575 \a   src/sass/base/_typography.scss 31:49  @import\a   src/sass/main.scss 16:9               root stylesheet';
 }
-
-/**
- * Basic link styles
- */
-a {
-  color: #cc6666;
-  text-decoration: none;
-}
-a:hover, a:active, a:focus {
-  color: #41474b;
-  text-decoration: underline;
-}
-
-@font-face {
-  font-family: SourceSansPro;
-  font-weight: 400;
-  src: url("../assets/fonts/SourceSansPro-Regular.ttf");
-}
-@font-face {
-  font-family: SourceSansPro;
-  font-weight: 600;
-  src: url("../assets/fonts/SourceSansPro-SemiBold.ttf");
-}
-/**
- * Basic typography style for copy text
- */
-body {
-  color: #41474b;
-  font: 400 125%/1.4 "SourceSansPro-Regular", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
-a:not([class]) {
-  font-weight: 400;
-}
-a.styled {
-  font-weight: 600;
-}
-
-/*# sourceMappingURL=main.css.map */
