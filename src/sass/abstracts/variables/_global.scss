@@ -8,3 +8,7 @@ $font-url: '../assets/fonts/' !default;
 
 //- Flow Sapce - https://24ways.org/2018/managing-flow-and-rhythm-with-css-custom-properties/
 $flow-space: 1em;
+
+$page-top-space: $flow-space * 9;
+$page-bottom-space: $flow-space * 6;
+$aside-width: 28em; 

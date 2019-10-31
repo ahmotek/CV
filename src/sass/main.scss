@@ -17,7 +17,8 @@
         'base/helpers'; 
 
 //- Layout areas
-@import 'layout/header',
+@import 'layout/layout',
+        'layout/header',
         'layout/footer',
         'layout/sidebar',
         'layout/navigation',
@@ -30,5 +31,5 @@
 
 //- Specific Pages
 @import 'pages/home',
-        'pages/contact';
+        'pages/contact'; 
 
