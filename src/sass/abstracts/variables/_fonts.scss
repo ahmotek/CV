@@ -7,9 +7,10 @@ $text-normal: 400;
 $text-semibold: 600;
 
 //- Set heading font-size map.
+//- Usage: map-get($key, $value);
 /// @type Size 
 $font-size-map : (
-  heading-1: 2.25em,
+  heading-1: 2.25em, //- map-get($font-size-map, heading-1);
   heading-2: 2em,
   heading-3: 1.75em,
   heading-4: 1.5em,

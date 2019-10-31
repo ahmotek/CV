@@ -37,6 +37,6 @@ img {
  * Axiomatic CSS and Lobotonized Owls for flows
  * https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/
  */
-article > * + * {
-  margin-top: $flow-space * 1.5;
-}
+// article > * + * {
+  // margin-top: $flow-space;
+// }

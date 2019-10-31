@@ -1,0 +1,72 @@
+// body {
+  // display: grid;
+  // grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+  // grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+// }
+
+/**
+ * Main content containers
+ * 1. Make the container full-width with a maximum width
+ * 2. Center it in the viewport
+ * 3. Leave some space on the edges, especially valuable on small screens
+ */
+.app {
+  width: 100%;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $flow-space * 2;
+  padding-right: $flow-space * 2;
+
+  @media #{map-get($breakpoints, 'large'), map-get($breakpoints, 'medium')} {
+    margin-top: $page-top-space;
+    margin-bottom: $page-bottom-space;
+  }
+ }
+
+.header {
+  width: 100%;
+
+  @media #{map-get($breakpoints, 'large'), map-get($breakpoints, 'medium')} {
+    position: fixed;
+    top: $page-top-space;
+    max-width: $aside-width;
+    padding-right: $flow-space * 2;
+  }
+
+  // &__heading {
+    // if text-styling only, do not put it here
+  // }
+
+  // &__heading-small {
+    // if text-styling only, do not put it here
+  // }
+}
+
+.main {
+  width: 100%;
+
+  @media #{map-get($breakpoints, 'large'), map-get($breakpoints, 'medium')} {
+    max-width: calc(#{$max-width} - #{$aside-width});
+    margin-left: $aside-width;
+    padding-left: $flow-space * 2;
+  }
+}
+
+.footer {
+  @media #{map-get($breakpoints, 'large'), map-get($breakpoints, 'medium')} {
+    display: none;
+  }
+
+  @media print {
+    .footer {
+      position: fixed;
+      bottom: 0;
+      padding-bottom: 0;
+      width: 100%;
+      color: #737e87;
+      font-size: 0.75rem;
+      text-align: center; }
+  }
+}
+
